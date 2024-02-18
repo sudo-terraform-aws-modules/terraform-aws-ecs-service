@@ -49,3 +49,34 @@ variable "assign_public_ip" {
   description = "(optional) Assign Public IP or not. Default: false)"
   default     = false
 }
+
+
+variable "target_group_arn" {
+  type        = string
+  description = "(optional) Target Group ARN"
+  default     = null
+}
+
+variable "container_name" {
+  type        = string
+  description = "(optional) Container Name"
+  default     = null
+}
+
+variable "container_port" {
+  type        = string
+  description = "(optional) Container Port"
+  default     = null
+}
+
+variable "capacity_provider_name" {
+  type        = string
+  description = "(optional) Capacity provider name"
+  default     = null
+}
+
+variable "capacity_provider_weight" {
+  type        = string
+  description = "(optional) Capacity provider Weight"
+  default     = null
+}
